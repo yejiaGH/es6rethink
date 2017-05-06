@@ -1,1 +1,1 @@
-console.log('index.js')
+import './class/lesson1';
