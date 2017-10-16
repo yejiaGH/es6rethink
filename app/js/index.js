@@ -1,3 +1,4 @@
+
+// import 'babel-polyfill';
 // import './class/lesson1';
-import 'babel-polyfill';
-import Lottery from './lottery';
+// import Lottery from './lottery';

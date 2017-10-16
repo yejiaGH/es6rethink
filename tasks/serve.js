@@ -7,8 +7,8 @@ gulp.task('serve',(cb)=>{
   console.log('serve====');
   if(!args.watch) return cb();
   console.log(args.watch);
-  var server = liveserver.new(['--harmony','server/bin/www']);
-  // var server = liveserver.new(['server/bin/www']);
+  // var server = liveserver.new(['--harmony','server/bin/www']);
+  var server = liveserver.new(['server/bin/www']);
   server.start();
 
   gulp.watch(['server/public/**/*.js','server/views/**/*.ejs'],function(file){
