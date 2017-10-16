@@ -23,9 +23,12 @@ gulp.task('scripts',()=>{
       module:{
         loaders:[{
           test:/\.js$/,
-          loader:'babel'
-        }]
-      }
+          loader:'babel',
+          query: {
+            presets: ['es2015', 'stage-3']
+          }
+        }]        
+      }       
     }),null,(err,stats)=>{
       log(`Finished '${colors.cyan('scripts')}'`,stats.toString({
         chunks:false
